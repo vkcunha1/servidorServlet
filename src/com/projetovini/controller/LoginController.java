@@ -18,7 +18,8 @@ import com.projetovini.model.Usuario;
 public class LoginController extends HttpServlet {
 	private UsuarioDAO dao;
 	private static final long serialVersionUID = 1L;
-	public static final String MENU = "/listStudent.jsp";
+//	public static final String MENU = "/listStudent.jsp";
+	public static final String SUCESSO ="/sucessoLogin.jsp";
 	public static final String LOGIN= "/login.jsp";
 	
 	public LoginController(){
@@ -41,7 +42,7 @@ public class LoginController extends HttpServlet {
 			if(usuarioLogado != null){
 				HttpSession session = request.getSession();
 				session.setAttribute("usuarioLogado", usuarioLogado);
-				 requestDispatcher = request.getRequestDispatcher(MENU);
+				 requestDispatcher = request.getRequestDispatcher(SUCESSO);
 			}
 		}
 		requestDispatcher.forward(request, response);
