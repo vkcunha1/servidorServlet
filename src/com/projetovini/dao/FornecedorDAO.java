@@ -1,5 +1,7 @@
 package com.projetovini.dao;
 
-public interface FornecedorDAO {
+import com.projetovini.model.Fornecedor;
+
+public interface FornecedorDAO extends GenericDAO<Fornecedor> {
 
 }

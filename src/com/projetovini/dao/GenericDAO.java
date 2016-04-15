@@ -3,9 +3,10 @@ package com.projetovini.dao;
 import java.util.List;
 
 public interface GenericDAO<T> {
-	public void adiciona( T t );
-	public void deleta( int id );
-	public void atualiza( T t);
+	public void adiciona(T t);
+	public void deleta(int id);
+	public void atualiza(T t);
 	public List<T> getTodos();
-	public T pegaPorId( int id );
+	public T pegaPorId(int id);
+	public List<T> find(String filtro);
 }

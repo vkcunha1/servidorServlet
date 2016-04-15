@@ -1,5 +1,7 @@
 package com.projetovini.dao;
 
-public interface ProdutoDAO {
+import com.projetovini.model.Produto;
+
+public interface ProdutoDAO extends GenericDAO<Produto> {
 
 }

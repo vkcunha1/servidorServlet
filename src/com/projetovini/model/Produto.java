@@ -2,28 +2,40 @@ package com.projetovini.model;
 
 
 public class Produto {
-	private int codProduto;
-	private String nomeProduto;
-	private String tipoProduto;
+	private int codProd;
+	private String nomeProd;
+	private String tipoProd;
+	private String tamanhoProd;
+	private Fornecedor prodFornec;
 	
-	public int getCodProduto() {
-		return codProduto;
+	public int getCodProd() {
+		return codProd;
 	}
-	public void setCodProduto(int codProduto) {
-		this.codProduto = codProduto;
+	public void setCodProd(int codProd) {
+		this.codProd = codProd;
 	}
-	public String getNomeProduto() {
-		return nomeProduto;
+	public String getNomeProd() {
+		return nomeProd;
 	}
-	public void setNomeProduto(String nomeProduto) {
-		this.nomeProduto = nomeProduto;
+	public void setNomeProd(String nomeProd) {
+		this.nomeProd = nomeProd;
 	}
-	public String getTipoProduto() {
-		return tipoProduto;
+	public String getTipoProd() {
+		return tipoProd;
 	}
-	public void setTipoProduto(String tipoProduto) {
-		this.tipoProduto = tipoProduto;
+	public void setTipoProd(String tipoProd) {
+		this.tipoProd = tipoProd;
 	}
-	
-	
+	public String getTamanhoProd() {
+		return tamanhoProd;
+	}
+	public void setTamanhoProd(String tamanhoProd) {
+		this.tamanhoProd = tamanhoProd;
+	}
+	public Fornecedor getProdFornec() {
+		return prodFornec;
+	}
+	public void setProdFornec(Fornecedor prodFornec) {
+		this.prodFornec = prodFornec;
+	}
 }

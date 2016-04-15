@@ -26,16 +26,17 @@ public class MenuController extends HttpServlet {
 	public static final String MENU_INICIO = "/menu.jsp";
 	
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher requestDispatcher = null;
 		String forward = "";
 		String action = request.getParameter("action");
 		
-		if(action.equalsIgnoreCase("menuCliente")){
-			
-		} else{
+		if(action!=null){
+			if(action.equalsIgnoreCase("menuCliente")){
+			}
 			forward = MENU_INICIO;
-		}
+		} else
+			forward = MENU_INICIO;
 		requestDispatcher = request.getRequestDispatcher(forward);
 		requestDispatcher.forward(request, response);
 	}
